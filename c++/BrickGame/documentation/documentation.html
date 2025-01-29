@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrickGame - Описание</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        .game-section {
+            margin-bottom: 40px;
+        }
+
+        .game-description {
+            margin-bottom: 20px;
+        }
+
+        .game-state {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>BrickGame - Описание</h1>
+    </header>
+    <div class="container">
+        <section class="game-section">
+            <h2>Общее описание</h2>
+            <p>BrickGame - это набор двух игр: Змейка и Тетрис. Каждая игра имеет свои правила и управление. Ниже
+                приведены подробные описания и правила для каждой игры, а также конечные состояния игры.</p>
+        </section>
+
+        <section class="game-section">
+            <h2>Змейка</h2>
+            <div class="game-description">
+                <h3>Описание</h3>
+                <p>В игре Змейка цель состоит в том, чтобы управлять змейкой, которая растет по мере того, как она ест
+                    еду. Игрок должен избегать столкновений с границами экрана и собственным телом.</p>
+                <h3>Правила</h3>
+                <ul>
+                    <li>Используйте клавиши со стрелками для управления движением змейки.</li>
+                    <li>Ешьте еду, чтобы змейка росла.</li>
+                    <li>Избегайте столкновений со стенами и собой.</li>
+                </ul>
+                <h3>Конечные состояния</h3>
+                <p>Змейка имеет следующие конечные состояния:</p>
+                <ul>
+                    <li>MainMenu - Главное меню</li>
+                    <li>Start - Начало игры</li>
+                    <li>Paused - Игра приостановлена</li>
+                    <li>SpawnFruit - Появление еды</li>
+                    <li>TurnMove - Движение змейки</li>
+                    <li>EatFruit - Употребление еды</li>
+                    <li>GameOver - Игра окончена</li>
+                    <li>Win - Победа</li>
+                </ul>
+                <img src="../Snake.JPG" alt="Змейка">
+            </div>
+        </section>
+
+        <section class="game-section">
+            <h2>Тетрис</h2>
+            <div class="game-description">
+                <h3>Описание</h3>
+                <p>В игре Тетрис цель состоит в том, чтобы размещать падающие блоки, чтобы заполнить горизонтальные
+                    линии. Заполненные линии удаляются, и игрок продолжает до тех пор, пока блоки не достигнут верха
+                    экрана.</p>
+                <h3>Правила</h3>
+                <ul>
+                    <li>Используйте клавиши со стрелками для управления блоками.</li>
+                    <li>Заполняйте горизонтальные линии, чтобы они исчезли.</li>
+                    <li>Не допускайте, чтобы блоки достигли верха экрана.</li>
+                </ul>
+                <h3>Конечные состояния</h3>
+                <p>Тетрис имеет следующие конечные состояния:</p>
+                <ul>
+                    <li>MainMenu - Главное меню</li>
+                    <li>Start - Начало игры</li>
+                    <li>Paused - Игра приостановлена</li>
+                    <li>SpawnShape - Появление формы</li>
+                    <li>Moving - Движение формы</li>
+                    <li>Shifting - Изменение формы</li>
+                    <li>Attaching - Прикрепление формы</li>
+                    <li>GameOver - Игра окончена</li>
+                    <li>Win - Победа</li>
+                </ul>
+
+                <img src="../Tetris.JPG" alt="Тетрис">
+            </div>
+            <!DOCTYPE html>
+            <html lang="ru">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>BrickGame - Документация</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        line-height: 1.6;
+                        background-color: #f4f4f4;
+                        color: #333;
+                    }
+
+                    header {
+                        background: #333;
+                        color: #fff;
+                        padding: 20px;
+                        text-align: center;
+                    }
+
+                    .container {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        padding: 20px;
+                        background: #fff;
+                    }
+
+                    h1,
+                    h2,
+                    h3 {
+                        color: #333;
+                    }
+
+                    h2 {
+                        border-bottom: 2px solid #333;
+                        padding-bottom: 10px;
+                    }
+
+                    section {
+                        margin-bottom: 40px;
+                    }
+
+                    .code {
+                        background: #f7f7f7;
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        margin: 10px 0;
+                        overflow-x: auto;
+                        font-family: 'Courier New', Courier, monospace;
+                    }
+
+                    .game-section,
+                    .class-section {
+                        margin-bottom: 40px;
+                    }
+
+                    ul {
+                        margin: 0;
+                        padding: 0 20px;
+                        list-style-type: disc;
+                    }
+
+                    .class-description {
+                        margin-bottom: 20px;
+                    }
+
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        margin-top: 10px;
+                    }
+                </style>
+            </head>
+
+            <body>
+                <header>
+                    <h1>BrickGame - Документация</h1>
+                </header>
+                <div class="container">
+                    <section class="game-section">
+                        <h2>Общее описание</h2>
+                        <p>BrickGame - это программная реализация двух игр: Змейка и Тетрис. Каждая игра имеет свои
+                            состояния, классы и методы для управления игровой логикой. Данная документация описывает
+                            структуру проекта, классы, состояния и методы, используемые в игре.</p>
+                    </section>
+
+                    <section class="game-section">
+                        <h2>Архитектура</h2>
+                        <p>Проект состоит из двух основных компонентов: игры Змейка и игры Тетрис. Каждая из них
+                            реализована с использованием паттерна состояния, где каждое состояние игры представлено
+                            отдельным классом. Эти классы управляют логикой игры в зависимости от текущего состояния.
+                        </p>
+                    </section>
+
+                    <section class="game-section">
+                        <h2>Классы и состояния</h2>
+                        <h3>Змейка</h3>
+                        <div class="class-section">
+                            <h4>Класс SnakeModel</h4>
+                            <p class="class-description">Класс <code>SnakeModel</code> отвечает за управление
+                                состояниями игры "Змейка". В нем реализованы основные методы для перехода между
+                                состояниями и выполнения логики игры.</p>
+
+                            <div class="code">
+                                <strong>Методы:</strong>
+                                <ul>
+                                    <li><code>void setState(GameState state)</code> - Устанавливает текущее состояние
+                                        игры.</li>
+                                    <li><code>void resetGame()</code> - Сбрасывает параметры игры к начальному
+                                        состоянию.</li>
+                                    <li><code>void spawnSnake()</code> - Создает новую змейку на поле.</li>
+                                    <li><code>void updateGame()</code> - Обновляет текущее состояние игры.</li>
+                                </ul>
+                            </div>
+
+                            <h4>Состояния</h4>
+                            <p>Игра Змейка имеет следующие состояния, каждое из которых представлено отдельным классом:
+                            </p>
+                            <ul>
+                                <li><strong>MainMenu</strong>: Главное меню</li>
+                                <li><strong>Start</strong>: Начало игры</li>
+                                <li><strong>Paused</strong>: Игра приостановлена</li>
+                                <li><strong>SpawnFruit</strong>: Появление еды</li>
+                                <li><strong>TurnMove</strong>: Движение змейки</li>
+                                <li><strong>EatFruit</strong>: Употребление еды</li>
+                                <li><strong>GameOver</strong>: Игра окончена</li>
+                                <li><strong>Win</strong>: Победа</li>
+                            </ul>
+                        </div>
+
+                        <h3>Тетрис</h3>
+                        <div class="class-section">
+                            <h4>Класс TetrisModel</h4>
+                            <p class="class-description">Класс <code>TetrisModel</code> отвечает за управление
+                                состояниями игры "Тетрис". Он контролирует логику игры, такие как появление новых фигур,
+                                их перемещение и обработку столкновений.</p>
+
+                            <div class="code">
+                                <strong>Методы:</strong>
+                                <ul>
+                                    <li><code>void setState(GameState state)</code> - Устанавливает текущее состояние
+                                        игры.</li>
+                                    <li><code>void spawnShape()</code> - Создает новую фигуру на поле.</li>
+                                    <li><code>void moveShape()</code> - Перемещает текущую фигуру.</li>
+                                    <li><code>void updateGame()</code> - Обновляет текущее состояние игры.</li>
+                                </ul>
+                            </div>
+
+                            <h4>Состояния</h4>
+                            <p>Игра Тетрис имеет следующие состояния, каждое из которых представлено отдельным классом:
+                            </p>
+                            <ul>
+                                <li><strong>MainMenu</strong>: Главное меню</li>
+                                <li><strong>Start</strong>: Начало игры</li>
+                                <li><strong>Paused</strong>: Игра приостановлена</li>
+                                <li><strong>SpawnShape</strong>: Появление фигуры</li>
+                                <li><strong>Moving</strong>: Движение фигуры</li>
+                                <li><strong>Shifting</strong>: Изменение формы фигуры</li>
+                                <li><strong>Attaching</strong>: Прикрепление фигуры</li>
+                                <li><strong>GameOver</strong>: Игра окончена</li>
+                                <li><strong>Win</strong>: Победа</li>
+                            </ul>
+                        </div>
+                    </section>
+
+
+
+                    <section class="game-section">
+                        <h2>Заключение</h2>
+                        <p>Делайте игры</p>
+                    </section>
+                </div>
+            </body>
+
+
+            </html>
+
+        </section>
+    </div>
+</body>
+
+</html>
