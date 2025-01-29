@@ -1,3 +1,3 @@
-# [BrickGame: Змейка и Тетрис](https://github.com/MysticStory/learning-projects/c++/BrickGame)
+# [BrickGame: Змейка и Тетрис](https://github.com/MysticStory/learning-projects/tree/master/c%2B%2B/BrickGame)
 Проект реализует две классические игры — **Змейку** и **Тетрис** — на языке C++ с использованием паттерна MVC.  
 Ключевая особенность: возможность переключать **игры** (модели) и **интерфейсы** (CLI/Qt) независимо друг от друга.
