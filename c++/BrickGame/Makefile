@@ -21,7 +21,7 @@ endif
 
 all: install
 
-install: clean tetris_gui tetris_cli snake_cli snake_gui
+install: tetris_gui tetris_cli snake_cli snake_gui
 
 uninstall:
 	rm -rf $(BUILD_DIR)
@@ -36,10 +36,10 @@ dist: clean
 	tar -czvf s21_brick_game.tar.gz *
 
 make_test: tetris.a snake.a
-	$(CC) $(CFLAGS)  -g src/main_test.cpp tests/*.cpp $(BUILD_DIR)/tetris.a $(BUILD_DIR)/snake.a -o s21_test $(LDFLAGS) $(LIB_FLAGS)
+	$(CC) $(CFLAGS)  -g  tests/*.cpp $(BUILD_DIR)/tetris.a $(BUILD_DIR)/snake.a -o s21_test $(LDFLAGS) $(LIB_FLAGS)
 
 make_test_coverage: build_dir clean
-	$(CC) $(CFLAGS)  -g --coverage src/main_test.cpp tests/*.cpp $(SNAKE_SOURCES) $(TETRIS_SOURCES) -o s21_test $(LDFLAGS) $(LIB_FLAGS)
+	$(CC) $(CFLAGS)  -g --coverage  tests/*.cpp $(SNAKE_SOURCES) $(TETRIS_SOURCES) -o s21_test $(LDFLAGS) $(LIB_FLAGS)
 	./s21_test
 
 test: build_dir make_test 

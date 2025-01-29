@@ -57,17 +57,21 @@
 ---
 
 ## **Структура проекта**
-brick_game/
-├── snake/ # Логика Змейки (MVC-модель) 
-├── tetris/ # Логика Тетриса (MVC-модель) 
-└── common/ # Общие модули 
+src/  
+│   ├──_config/# Константы для логики
+│   ├──brick_game/  
+│   │   ├── snake/ # Логика Змейки (MVC-модель)  
+│   │   ├── tetris/ # Логика Тетриса (MVC-модель)  
+│   │   └── common/ # Общие модули  
+│   ├──controller/  # Контроллер
+│   ├──gui/  
+│   │   ├── desktop/ # Графический интерфейс (Qt)  
+│   │   └──cli/ # Консольный интерфейс (ncurses)  
+│   └──main_cli.cpp # Консольный интерфейс main
 
-gui/ 
-├── desktop/ # Графический интерфейс (Qt) 
-└── cli/ # Консольный интерфейс (ncurses) 
+tests/ # Юнит-тесты для моделей  
+Makefile # Сборка всех комбинаций  
 
-tests/ # Юнит-тесты для моделей
-Makefile # Сборка всех комбинаций
 ---
 
 ## **Сборка и запуск**
@@ -104,8 +108,19 @@ make tetris_cli        # Тетрис + CLI
 
 ## **Демонстрация**
 Скриншоты:
-Змейка (Qt)	Тетрис (Qt)	Змейка (CLI)
-![Snake Qt]	![Tetris Qt]	![Snake CLI]
+  ### Змейка (Qt)
+  ![Змейка (Qt)](Image/desktop_snake.jpg) 
+
+  ### Тетрис (Qt) 
+  ![Тетрис (Qt)!](Image/desktop_tetris.jpg) 
+
+  ### Змейка (CLI) 
+  ![Змейка (CLI)](Image/cli_snake.jpg) 
+
+  ### Тетрис (CLI) 
+  ![Тетрис (CLI)](Image/cli_tetris.jpg) 
+
+	
 
 ## Автор
 - **GitHub**: [MysticStory ](https://github.com/MysticStory)
