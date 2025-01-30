@@ -13,8 +13,8 @@
 
 | Участник | Роль | Задачи |
 |----------|------|--------|
-| TeamLead[@namoraza](https://github.com/) | QA,  Backend |   Тесты, IO, оптимизация |
-| [@jeromyni](https://github.com/) | Frontend,  Backend | Интерфейсы, UI, OpenGL |
+| TeamLead [suupertramp](https://github.com/suupertramp) | QA,  Backend |   Тесты, IO, оптимизация |
+| [@jeromyni](https://github.com/suupertramp) | Frontend,  Backend | Интерфейсы, UI, OpenGL |
 | [MysticStory(Я)](https://github.com/MysticStory) | Backend | OpenGL, оптимизация |
 
 ### Мой вклад
@@ -197,6 +197,6 @@ make gcov_report    # Отчёт о покрытии кода
 
 ## Команда
 
-| TeamLead[@namoraza](https://github.com/) 
-| [@jeromyni](https://github.com/) 
-| [MysticStory(Я)](https://github.com/MysticStory) 
+* TeamLead [suupertramp](https://github.com/suupertramp) 
+* [@jeromyni](https://github.com/) 
+* [MysticStory(Я)](https://github.com/MysticStory) 
