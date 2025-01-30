@@ -178,15 +178,15 @@ make install      # Установка в системный каталог
 
 ## Структура проекта
 
-src/
-├── Controller/      # Обработка действий
-├── Geometry/        # Вспомогательные классы для 3D моделей
-├── Model/           # Бизнес-логика (MVC)
-├── QtGifImage/      # Стороняя библиотека на QT для работы c Image, Gif 
-└── View/            # GUI (Qt)
+src/  
+├── Controller/      # Обработка действий  
+├── Geometry/        # Вспомогательные классы для 3D моделей  
+├── Model/           # Бизнес-логика (MVC)  
+├── QtGifImage/      # Стороняя библиотека на QT для работы c Image, Gif   
+└── View/            # GUI (Qt)  
 
- tests/           # Unit-тесты
- Makefile         # Сборка проекта
+ tests/           # Unit-тесты  
+ Makefile         # Сборка проекта  
 
 Тестирование
 ```bash
